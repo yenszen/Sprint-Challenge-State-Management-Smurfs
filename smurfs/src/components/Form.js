@@ -35,9 +35,7 @@ class Form extends React.Component {
                 type="number"
                 name="age"
                 value={this.state.age}
-                onChange={e =>
-                  this.setState({ age: e.target.value.replace(/\D/, "") })
-                }
+                onChange={e => this.setState({ age: e.target.value })}
               />
             </div>
             <div className="field">
